@@ -20,22 +20,18 @@
 }
 '''
 
-#у меня пока не получилось сделать, обновлю, если получится
-
-'''
 keys = ('Name', 'Price', 'Count', 'Ul')
-dist1 = dict(zip(keys, ('Принтер', 2000.00, 6, 'ед.')))
-dist2 = dict(zip(keys, ('Сканер', 4000.00, 3, 'ед.')))
-dist3 = dict(zip(keys, ('Монитор', 5000.00, 2, 'ед.')))
-lst = [dist1, dist2, dist3]
+lst = [dict(zip(keys, ('Принтер', 2000.00, 6, 'ед.'))), dict(zip(keys, ('Сканер', 4000.00, 3, 'ед.'))), dict(zip(keys, ('Монитор', 5000.00, 2, 'ед.')))]
 lst_new = []
 for x in range(3):
     v = (x + 1, lst[x])
     lst_new.append(v)
-print(lst)
-lst_new1 = []
-for x in lst:
+lst_new1, lst_new2 = [], []
+for x1 in keys:
+    lst_new2.clear()
+    for x2 in lst_new:
+        v2 = x2[1].get(x1)
+        lst_new2.append(v2)
+    lst_new1.append(list(set(lst_new2)).copy())
 dct1 = dict(zip(keys, lst_new1))
-'''
-
-
+print(dct1)
