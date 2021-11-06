@@ -13,4 +13,3 @@ for x in range(len(sp)):
     else:
         sp_r.insert(x - 1, sp[x])
 print(sp_r)
-
