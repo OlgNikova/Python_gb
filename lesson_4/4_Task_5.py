@@ -13,3 +13,4 @@ def func(param1, param2):
 lst = [x for x in range(100, 1001) if x % 2 == 0]
 result = reduce(func, lst)
 print(result)
+

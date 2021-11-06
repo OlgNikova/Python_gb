@@ -34,3 +34,4 @@ print('Заработная плата:', func_salary(hours_work, hours_tax, pre
 
 
 
+

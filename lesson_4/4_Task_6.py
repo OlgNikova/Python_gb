@@ -29,3 +29,4 @@ for y in itertools.cycle(lst_cnt):
         i += 1
 
 print(lst_copy)
+
