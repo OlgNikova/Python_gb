@@ -11,8 +11,7 @@
 class Matrix:
 
     def __init__(self, lst_x):
-        Matrix.lst_x = lst_x
-
+        self.lst_x = lst_x
 
     def __str__(self):
         str1 = ''
@@ -21,7 +20,6 @@ class Matrix:
                 str1 += str(y) + ' '
             str1 += '\n'
         return str1
-
 
     def __add__(self, other):
         new_lst = []
